@@ -1,0 +1,26 @@
+/*---------Added font family and background image---------------*/
+body {
+	background: url(images/office.jpeg) center center fixed;
+	background-size: cover;
+	text-align: center;
+	font-family: Arvo, serif;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+.jumbotron h1 {
+	letter-spacing: 2.5px;
+}
+
+.form-horizontal {
+	margin-top: 50px;
+}
+
+.row {
+	margin-top: 30px;
+}
+
+
+

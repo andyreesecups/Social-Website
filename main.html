@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social Website API's</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Facebook code -->
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1>Join us</h1>
+            <p>We will give your business the kickstart it needs</p>
+        </div>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-8">
+                    <input type="email" id="email" placeholder="Your Email" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-3 col-xs-6">
+                    <input type="submit" id="submit" value="Subscribe" class="btn btn-info">
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <!-- Facebook button -->
+            <div class="col-sm-offset-3 col-sm-2">
+                <div class="fb-like" data-href="https://austin.codingbootcamp.utexas.edu/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            </div>
+            <!-- Google plus button -->
+            <div class="col-sm-2">
+            </div>
+            <!-- Twitter button -->
+            <div class="col-sm-2">
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world">
+Tweet</a>
+            </div>
+        </div>
+        <!-- Go here for twitter timelines https://dev.twitter.com/web/embedded-timelines -->
+        <!-- Twitter timeline -->
+        <div>
+            <a class="twitter-timeline" href="https://twitter.com/search?q=asreese88" data-widget-id="853442719825481728" data-chrome="nofooter noborders">Tweets about asreese88</a>
+        </div>
+    </div>
+    <script>
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+    </script>
+    <script src="assets/logic.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
